@@ -1,5 +1,5 @@
 /*!
-Theme Name: RED Starter Theme
+Theme Name: Inhabitent
 Theme URI: http://underscores.me/
 Author: RED Academy
 Author URI: http://www.redacademy.com
@@ -751,6 +751,9 @@ h2 a {
 .footer-block-item {
   width: 25%; }
 
+.logo {
+  width: 50%; }
+
 .text-logo {
   margin-top: 1rem;
   text-align: right; }
@@ -767,5 +770,4 @@ h2 a {
 .home-hero {
   background: url(../../assets/images/home-hero.jpg);
   background-size: cover;
-  min-height: 100vh;
-  border: black; }
+  min-height: 100vh; }
