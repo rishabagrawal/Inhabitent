@@ -12,7 +12,7 @@ plugins/*
 # Ignore everything in "themes" except the active theme. #
 themes/*
 !themes/inhabitent/
-!themes/redstarter
+!themes/redstarter/*
 # Ignore packages #
 themes/inhabitent/node_modules/
 themes/redstarter/node_modules/
