@@ -14,14 +14,44 @@
    width: 100vw;
    
  }
+ .front-page-content{
+     max-width: 1120px;
+     margin: auto;
+     section h2{
+         text-align: center;
+     }
+ }
+ .product-terms{
+     display: flex;
+    justify-content: space-between;
+  .product-term{
+    border: 1px solid #e1e1e1;
+    text-align: center;
+    flex: 1;
+    max-width: 23%;
+    img{
+        height: 10vh;
+    }
+  }   
+ }
 
 .journal-entry-entry{
          display: flex;
+         
+         .journal{
+             border: 1px solid #e1e1e1;
+             text-align: center;
+             flex:1;
+             
+             
+         }
+         
  }
 
- img{
+.journal-entry-entry img{
     height: 30vh;
  }
+ 
 
     
      
