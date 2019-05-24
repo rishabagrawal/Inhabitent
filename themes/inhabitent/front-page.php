@@ -52,14 +52,6 @@ get_header(); ?>
 
 
 
-
-
-
-
-
-
-
-
 		<section class= "fp-journal">
 			<h2>Inhabitent Journal</h2>
 				
@@ -94,6 +86,29 @@ get_header(); ?>
 	</div>
 	
 </section>
+
+<section class="fb-adventure"> <!--adventure-->
+		<h2>Latest Adventures</h2>
+	<ul class="adventure-entry-entry">
+		
+		<li class="adventure-entry nature">
+		   <a href="#">Getting back to nature in a canoe</a>
+	</li>
+	
+		
+		<li class="adventure-entry beach">
+		 <a href="#">A night with friends at the beach</a>
+	</li>
+		<li class="adventure-entry mountain">
+		<a href="#">Taking in the view at Big Mountain</a>
+	</li>
+		<li class="adventure-entry sky">
+		<a href="#">Star-Gazing at the night sky</a>
+	</li>
+
+	</ul>
+	
+</section> <!--adventure ending-->
 </div> <!-- front page content ends here for div -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
