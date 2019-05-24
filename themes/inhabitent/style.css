@@ -405,6 +405,9 @@ table {
   width: 100%; }
 
 .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -561,6 +564,15 @@ a {
   text-align: right;
   width: 50%; }
 
+.main-navigation .nav-menu {
+  width: 400px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -710,13 +722,15 @@ a {
   background-image: url(../../assets/images/adventure-photos/canoe-girl.jpg);
   grid-column: 1/span 2;
   background-size: cover;
+  background-position: center;
   grid-row: 1/span 2; }
 
 .beach {
   background-image: url(../../assets/images/adventure-photos/beach-bonfire.jpg);
   grid-column: 3/span 2;
   background-size: cover;
-  grid-row: 1/span 1; }
+  grid-row: 1/span 1;
+  background-position: center; }
 
 .mountain {
   background-image: url(../../assets/images/adventure-photos/mountain-hikers.jpg);
@@ -725,6 +739,21 @@ a {
 .sky {
   background-image: url(../../assets/images/adventure-photos/night-sky.jpg);
   background-size: cover; }
+
+.home .adventure-entry h3 {
+  margin-top: 24px; }
+
+.hero-image-header {
+  min-height: 100vh; }
+
+.margin {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 /*--------------------------------------------------------------
 # Content
@@ -832,7 +861,26 @@ object {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.content-area {
+  width: 75%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.widget-area {
+  width: 35%;
+  padding: 3rem; }
+
+.page-id-5 .site-content {
   width: 100%; }
+
+.page-find-us .site-content, .blog .site-content, .archive .site-content {
+  width: 80%;
+  margin: 0 auto; }
 
 h2 a {
   background: green;

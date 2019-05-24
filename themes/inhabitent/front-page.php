@@ -92,18 +92,18 @@ get_header(); ?>
 	<ul class="adventure-entry-entry">
 		
 		<li class="adventure-entry nature">
-		   <a href="#">Getting back to nature in a canoe</a>
+		   <a href="#"><h3>Getting back to nature in a canoe</h3></a>
 	</li>
 	
 		
 		<li class="adventure-entry beach">
-		 <a href="#">A night with friends at the beach</a>
+		 <a href="#"><h3>A night with friends at the beach</h3></a>
 	</li>
 		<li class="adventure-entry mountain">
-		<a href="#">Taking in the view at Big Mountain</a>
+		<a href="#"><h3>Taking in the view at Big Mountain</h3></a>
 	</li>
 		<li class="adventure-entry sky">
-		<a href="#">Star-Gazing at the night sky</a>
+		<a href="#"><h3>Star-Gazing at the night sky</h3></a>
 	</li>
 
 	</ul>

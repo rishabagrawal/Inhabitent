@@ -1,8 +1,30 @@
 .site-content{
     display: flex;
-    width: 100%;
- 
+    flex-grow: 1;
+    // width: 100%;
+
 }
+.content-area{
+    width: 75%;
+    flex-grow: 1;
+}
+.widget-area{
+    width: 35%;
+    padding: 3rem;
+}
+.page-id-5{
+    .site-content{
+        width: 100%;
+    }
+}
+.page-find-us, .blog, .archive{
+    .site-content{
+        width: 80%;
+        margin: 0 auto
+
+    }
+}
+
 h2 a {
     
     background:green;

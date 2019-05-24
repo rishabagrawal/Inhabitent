@@ -17,6 +17,7 @@
    justify-content: center;
    
  }
+
  .front-page-content{
      max-width: 1120px;
      margin: auto;
@@ -73,6 +74,7 @@
      background-image: url(../../assets/images/adventure-photos/canoe-girl.jpg);
      grid-column: 1/span 2;
      background-size: cover;
+     background-position: center;
      grid-row: 1/span 2;
 
  }
@@ -81,6 +83,7 @@
      grid-column: 3/span 2;
      background-size: cover;
      grid-row: 1/span 1;
+     background-position: center;
  }
  .mountain{
     background-image: url(../../assets/images/adventure-photos/mountain-hikers.jpg);
@@ -94,6 +97,9 @@
     
     background-size: cover;
   
+ }
+ .home .adventure-entry h3{
+     margin-top: 24px;
  }
 
 
