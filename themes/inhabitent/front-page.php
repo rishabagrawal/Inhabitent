@@ -9,19 +9,21 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-		  <section class="home-hero"> 
-		  <img src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">
-		  </section>
-		  <div class= "front-page-content">
-	<section> 
 		
-		<h2>Shop Stuff</h2>
-		<?php
-			$terms = get_terms(
+		    <section class="home-hero"> 
+	 			<img src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-full.svg" alt="inhabitent logo">
+		    </section>
+
+		  <div class= "front-page-content">
+			<section> 
+		
+		     <h2>Shop Stuff</h2>
+		     <?php
+			 $terms = get_terms(
 				array('taxonomy' => 'product-type', 
 				'hide_empty'=> 0)
 				
-			);
+			 );
 			?>
 			<div class ="product-terms">
 			<?php
@@ -66,7 +68,7 @@ get_header(); ?>
 	<div class="journal entry">
 		<?php if(has_post_thumbnail()):?>
 		<div class="thumbnail-wrapper">
-			<!-- <img src="<?php // echo get_the_post_thumbnail(); ?>"> -->
+			<img src="<?php // echo get_the_post_thumbnail(); ?>">
 			<?php the_post_thumbnail('large'); ?>
 	</div>
 	<?php endif; ?>
