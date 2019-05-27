@@ -13,3 +13,18 @@
     justify-content: flex-end;
     
 }
+.page-about .entry-content>:not(header) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    
+}
+.page-about .entry-content{
+    margin-bottom: 3.75rem;
+    margin: 0;
+   
+}
+.page-about .site-header{
+    position: absolute;
+}
+
