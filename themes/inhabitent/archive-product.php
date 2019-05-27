@@ -44,6 +44,7 @@ get_header(); ?>
    </div><!-- .product-terms -->
    
 </section>
+<section class="product-grid">
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -75,7 +76,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+</section>	
 
 		<?php else : ?>
 

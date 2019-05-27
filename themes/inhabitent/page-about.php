@@ -12,7 +12,14 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			
+				<div class="entry-content">
+					<?php the_content(); ?>
+			
+				</div><!-- .entry-content -->
+			</article><!-- #post-## -->
+
 
 			<?php endwhile; // End of the loop. ?>
 
