@@ -1,6 +1,49 @@
- .product-grid{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 1.5rem;
-    margin-bottom: 1.5rem;
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 23.5%);
+  grid-template-rows: repeat(4, 25vw);
+  grid-gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.post-type-archive {
+    .type-product{
+        display:flex;
+        flex-direction: column;
+        border: 1px solid #a1a1a1;
+    .entry-header{
+        flex-grow: 1;
+    }
+    img {
+        // width:100%;
+        height:100%;
+        object-fit: cover;
+    // height: 205px;
+    width:100%;
+  }
+}
+  .product-text-container{
+      width:100%;
+      display:flex;
+      padding: 1rem .5rem;
+      border-top: 5px solid #a1a1a1;
+
+      .after-dot{
+        overflow:hidden;
+        white-space:nowrap;
+          margin:0; padding:0;
+          &:after{
+              content: '........................................';
+          }
+      }
+      .price{
+          margin:0;
+          padding:0;
+      }
+  }
+  .product-terms .product-term {
+    border: none;
+    text-align: center;
+    
+    
+  }
 }

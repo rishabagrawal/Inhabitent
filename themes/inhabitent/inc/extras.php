@@ -48,4 +48,15 @@ function inhabitent_body_class_for_pages( $classes ) {
     }
     return $classes;
 }
+
 add_filter( 'body_class', 'inhabitent_body_class_for_pages' );
+
+
+
+
+function number_of_product_per_page($jquery){
+if ( is_post_type_archive( 'product' ) ) {
+	$query->set( 'posts_per_page', 16 );
+	return;
+}
+}
