@@ -411,7 +411,8 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%; }
+  width: 100%;
+  text-transform: uppercase; }
 
 .site-branding img {
   height: 40px; }
@@ -644,6 +645,9 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+body {
+  font-family: Merriweather Web; }
+
 .home header {
   position: absolute;
   display: -webkit-box;
@@ -756,7 +760,10 @@ a {
   grid-gap: 1.5rem;
   margin-bottom: 1.5rem; }
 
-.post-type-archive .type-product {
+.tax-product-type .product-grid {
+  grid-template-rows: repeat(1, 25vw); }
+
+.post-type-archive .type-product, .tax-product-type .type-product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -765,36 +772,45 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 1px solid #a1a1a1; }
-  .post-type-archive .type-product .entry-header {
+  .post-type-archive .type-product .entry-header, .tax-product-type .type-product .entry-header {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1; }
-  .post-type-archive .type-product img {
+  .post-type-archive .type-product img, .tax-product-type .type-product img {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover;
     width: 100%; }
 
-.post-type-archive .product-text-container {
+.post-type-archive .product-text-container, .tax-product-type .product-text-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 1rem .5rem;
   border-top: 5px solid #a1a1a1; }
-  .post-type-archive .product-text-container .after-dot {
+  .post-type-archive .product-text-container .after-dot, .tax-product-type .product-text-container .after-dot {
     overflow: hidden;
     white-space: nowrap;
     margin: 0;
     padding: 0; }
-    .post-type-archive .product-text-container .after-dot:after {
+    .post-type-archive .product-text-container .after-dot:after, .tax-product-type .product-text-container .after-dot:after {
       content: '........................................'; }
-  .post-type-archive .product-text-container .price {
+  .post-type-archive .product-text-container .price, .tax-product-type .product-text-container .price {
     margin: 0;
     padding: 0; }
 
-.post-type-archive .product-terms .product-term {
+.post-type-archive .product-terms .product-term, .tax-product-type .product-terms .product-term {
   border: none;
+  text-align: center;
+  max-width: 70px; }
+
+.post-type-archive .product-terms, .tax-product-type .product-terms {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.post-type-archive .site-main section h2, .tax-product-type .site-main section h2 {
   text-align: center; }
 
 .hero-image-header {
@@ -820,6 +836,11 @@ a {
 .page-about .entry-content {
   margin-bottom: 3.75rem;
   margin: 0; }
+  .page-about .entry-content .entry-title {
+    text-transform: uppercase;
+    color: white; }
+  .page-about .entry-content .about-heading {
+    text-transform: uppercase; }
 
 .page-about .site-header {
   position: absolute; }
