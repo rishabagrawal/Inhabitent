@@ -652,7 +652,7 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: Merriweather Web, serif; }
+  font-family: "Merriweather Web", serif; }
 
 .home header {
   position: absolute;
@@ -681,7 +681,8 @@ body {
   margin: auto; }
   .front-page-content section h2 {
     text-align: center;
-    margin-bottom: 3.75rem; }
+    margin-bottom: 3.75rem;
+    text-transform: uppercase; }
 
 .product-terms {
   display: -webkit-box;
@@ -1021,9 +1022,24 @@ object {
 .blog .entry-title {
   position: absolute;
   top: 0; }
+  .blog .entry-title a {
+    color: white; }
 
-.blog .type-post {
-  position: relative; }
+.blog .entry-meta {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #248A83;
+  padding: 0.00005rem 1.5rem;
+  color: #fff; }
+
+.blog .type-post .entry-header {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog .type-post .entry-header img {
+    width: 100%; }
 
 .site-footer {
   background-image: url("../../assets/images/dark-wood.png");
