@@ -417,6 +417,9 @@ table {
 .site-branding img {
   height: 40px; }
 
+.home nav a {
+  color: #fff; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -645,8 +648,11 @@ a {
 .widget_search .search-submit {
   display: none; }
 
+* a {
+  text-decoration: none; }
+
 body {
-  font-family: Merriweather Web; }
+  font-family: Merriweather Web, serif; }
 
 .home header {
   position: absolute;
@@ -696,25 +702,61 @@ body {
     .product-terms .product-term img {
       height: 10vh; }
 
-.journal-entry-entry {
+.stuff-button a {
+  background: #248a83;
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  font-family: "Novecento Sans Web",sans-serif;
+  font-size: .9rem;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase; }
+
+.read-more-btn {
+  border: 1px solid #000;
+  color: #000;
+  padding: .75rem 1.3rem;
+  margin-bottom: 1rem; }
+
+.journal-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  margin-bottom: 3.75rem; }
-  .journal-entry-entry .journal {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%; }
+  .journal-container .journal-entry-entry {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    .journal-container .journal-entry-entry h2 {
+      margin: 0; }
+    .journal-container .journal-entry-entry img {
+      height: 225px; }
+  .journal-container .journal {
     border: 1px solid #e1e1e1;
     text-align: center;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    max-width: 350px; }
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 32%;
+            flex: 0 1 32%; }
 
-.journal-entry-entry img {
-  height: 30vh; }
+.meta-title {
+  color: #248a83;
+  text-decoration: none;
+  font-family: Novecento Sans Web,sans-serif; }
+  .meta-title a {
+    text-decoration: none; }
 
 .adventure-entry-entry {
   width: 100%;
@@ -972,11 +1014,16 @@ object {
   width: 80%;
   margin: 0 auto; }
 
-.blog h2 a {
+.blog .entry-header h2 {
   background: #248A83;
-  position: relative;
-  bottom: 30vw;
-  font-family: Novecento Sans Web; }
+  padding: .75rem 1.5rem; }
+
+.blog .entry-title {
+  position: absolute;
+  top: 0; }
+
+.blog .type-post {
+  position: relative; }
 
 .site-footer {
   background-image: url("../../assets/images/dark-wood.png");

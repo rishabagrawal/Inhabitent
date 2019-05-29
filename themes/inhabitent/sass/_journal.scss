@@ -25,10 +25,19 @@
     }
 }
 
-.blog h2 a {
+.blog  {
+    .entry-header h2{
+        background: #248A83;
+        padding: .75rem 1.5rem;
+    }
+    .entry-title{
+        position: absolute;
+        top: 0;
+    }
+    .type-post{
+        position: relative;
+    }
+
+   
     
-    background:#248A83;
-    position: relative;
-    bottom: 30vw;
-    font-family: Novecento Sans Web;
 }

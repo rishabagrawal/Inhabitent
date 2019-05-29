@@ -36,7 +36,7 @@ get_header(); ?>
 				$term->slug . '.svg'
 				?>">
 			<p><?php echo $term->description; ?></p> 
-			<p> 
+			<p class="stuff-button"> 
 				<a href="<?php echo get_term_link($term); ?>">
 				<?php echo $term->name; ?> Stuff
 		</a>
@@ -56,7 +56,7 @@ get_header(); ?>
 
 		<section class= "fp-journal">
 			<h2>Inhabitent Journal</h2>
-				
+				<div class="journal-container">
 				<?php
 	$args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3 );
 
@@ -68,7 +68,7 @@ get_header(); ?>
 	<div class="journal entry">
 		<?php if(has_post_thumbnail()):?>
 		<div class="thumbnail-wrapper">
-			<img src="<?php // echo get_the_post_thumbnail(); ?>">
+		
 			<?php the_post_thumbnail('large'); ?>
 	</div>
 	<?php endif; ?>
@@ -78,15 +78,15 @@ get_header(); ?>
 		<?php echo get_comments_number(); ?> Comments 
 		</div>
 
-	<a href="<php echo get_thepermalink(); ?>"><h2><?php the_title(); ?></h2></a>
-	<a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+	<a href="<?php echo get_the_permalink(); ?>"><h2 class="meta-title"><?php the_title(); ?></h2></a>
+	<p><a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a></p>
 	</div>	
 
 		 
 	
 	<?php endforeach; wp_reset_postdata(); ?>
 	</div>
-	
+	</div>
 </section>
 
 <section class="fb-adventure"> <!--adventure-->
