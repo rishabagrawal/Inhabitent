@@ -34,6 +34,11 @@
    .text-logo{
     margin-top: 1rem;
     text-align: right;
+    a{
+        &:visited{
+            color:white;
+        }
+    }
     
 }
  

@@ -20,21 +20,22 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-            <?php
-                 echo CFS()->get( 'product_price' ); ?>
+ 
 
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
+		</header><!-- .entry-header -->
+		<div class="single-product-container">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php
+				 echo CFS()->get( 'product_price' ); ?>
 
-		<div class="entry-meta">
-			<?php red_starter_posted_on(); ?> / <?php red_starter_comment_count(); ?> / <?php red_starter_posted_by(); ?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
+		
+	
 
 	<div class="entry-content">
 		<?php the_content(); ?>
@@ -45,6 +46,7 @@ get_header(); ?>
 			) );
 		?>
 	</div><!-- .entry-content -->
+			</div>
 
 	<footer class="entry-footer">
 		<?php red_starter_entry_footer(); ?>

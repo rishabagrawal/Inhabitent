@@ -34,7 +34,7 @@
 				</div>
 
 				<div class="footer-block-item logo">
-				<div class="text-logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text-dark.svg" alt="inhabitent logo"></a>
+				<div class="text-logo"><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text.svg" alt="inhabitent logo"></a>
                </div>
 				</div>
 				

@@ -53,9 +53,9 @@ get_header(); ?>
 	<header class="entry-header">
 		
 		<?php if ( has_post_thumbnail() ) : ?>
-
+		<a href="<?php echo get_permalink(); ?>">
 			<?php the_post_thumbnail( 'medium_large' ); ?>
-			
+</a>
 		<?php endif; ?>
 		
 

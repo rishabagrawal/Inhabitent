@@ -5,16 +5,15 @@
 /* Links */
 
 a {
-	color: $color__link;
+	color: $color__text-main;
+	text-decoration: none;
 
-	&:visited {
-		color: $color__link-visited;
-	}
-	&:hover,
-	&:focus,
-	&:active {
-		color: $color__link-hover;
-	}
+
+	// &:hover,
+	// &:focus,
+	// &:active {
+	// 	color: $color__link-hover;
+	// }
 	&:focus {
 		outline: thin dotted;
 	}
@@ -136,4 +135,14 @@ a {
 	justify-content: space-between;
 	display: flex;
  }
+ .search-field{
+	 display: none;
+ }
+ .search-submit{
+	 background:transparent;
+	 box-shadow: none;
+	 border:none;
+	 text-shadow: none;
+ }
+
 }
