@@ -417,8 +417,11 @@ table {
 .site-branding img {
   height: 40px; }
 
-.home nav a {
+.home nav a, .page-about nav a {
   color: #fff; }
+
+.archive nav a, .archive nav a, .single-product nav a, .blog nav a, .single-post nav a, .page-find-us nav a {
+  color: #248A83; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -675,6 +678,9 @@ body {
   display: -ms-flexbox;
   display: flex; }
 
+.home .icon-search {
+  color: #fff; }
+
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/images/home-hero.jpg);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/images/home-hero.jpg);
@@ -698,7 +704,11 @@ body {
   .front-page-content section h2 {
     text-align: center;
     margin-bottom: 3.75rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web', serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 38.4px; }
 
 .product-terms {
   display: -webkit-box;
@@ -810,7 +820,8 @@ body {
   background-size: cover; }
 
 .home .adventure-entry h3 {
-  margin-top: 24px; }
+  margin-top: 24px;
+  color: #fff; }
 
 .product-grid {
   display: grid;
@@ -867,10 +878,18 @@ body {
 .post-type-archive .product-terms, .tax-product-type .product-terms {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-bottom: 1px dashed #c8c8c8;
+  text-transform: uppercase; }
 
-.post-type-archive .site-main section h2, .tax-product-type .site-main section h2 {
-  text-align: center; }
+.post-type-archive .site-main section h1, .tax-product-type .site-main section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px; }
+
+.archive .product-term a {
+  color: #248A83; }
 
 .single-product .site-main {
   padding: 3rem 4rem; }
@@ -880,7 +899,8 @@ body {
   grid-template-columns: 50% 50%;
   grid-gap: 2rem; }
   .single-product article h1 {
-    margin-top: 0; }
+    margin-top: 0;
+    color: #d99054; }
   .single-product article img {
     width: 100%;
     height: 100%; }
@@ -916,6 +936,11 @@ body {
 
 .page-about .site-header {
   position: absolute; }
+
+.about-heading {
+  font-family: 'Novecento Sans Web',sans-serif;
+  letter-spacing: 2px;
+  font-size: 2.1rem; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1019,6 +1044,17 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.page-find-us article, .blog article, .single-post article {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 1%; }
+
+.page-find-us .entry-title {
+  text-transform: uppercase; }
+
+.page-find-us .contact-text, .page-find-us .email-text {
+  text-transform: uppercase;
+  font-size: 2.1rem; }
+
 .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,7 +1082,8 @@ object {
 
 .blog .entry-header h2 {
   background: #248A83;
-  padding: .75rem 1.5rem; }
+  padding: .75rem 1.5rem;
+  font-family: "Novecento Sans Web",sans-serif; }
 
 .blog .entry-title {
   position: absolute;

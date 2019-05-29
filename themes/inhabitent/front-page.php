@@ -78,7 +78,7 @@ get_header(); ?>
 		<?php echo get_comments_number(); ?> Comments 
 		</div>
 
-	<a href="<?php echo get_the_permalink(); ?>"><h2 class="meta-title"><?php the_title(); ?></h2></a>
+	<a href="<?php echo get_the_permalink(); ?>"><h3 class="meta-title"><?php the_title(); ?></h3></a>
 	<p><a class="read-more-btn" href="<?php echo get_the_permalink(); ?>">Read Entry</a></p>
 	</div>	
 

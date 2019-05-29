@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 		<section> 
 		
-		<h2>Shop Stuff</h2>
+		<h1>Shop Stuff</h1>
 		<?php
 		$terms = get_terms(
 		   array('taxonomy' => 'product-type', 

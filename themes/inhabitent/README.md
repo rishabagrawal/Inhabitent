@@ -1,21 +1,27 @@
-# RED Starter
+# Inhabitent
 
-A WordPress starter theme for RED Academy students, forked from Underscores.
+This is a multi-page website with a blog for a camping supply company called Inhabitent Camping Supply Co. using WordPress as a content management system.
 
-## Installation
+## Technology
+* Wordpress
+* Plugins 
+* Sass 
+* PHP
+* Scss
+* Git
+* GitHub
+* HTML
+* Scss
+* JQuery 
+* Gulp
+* Brower-watcher
+* Build
+* Command line
+* Iterm 2
+* Transfonter
 
-### 1. Download me (don't clone me!)
+## Learning Experience 
+Creating custom theme form scratch is difficult for the amount of css involved and we also got to learn about plugins. This is first time i'm creating a wordpress based project everything was far more different than usual we learnt about widgets, php-admin, making changes in wp-config, and generally about what is customizing everthing possible for a website. 
 
-Then add me to your `wp-content` directory.
 
-### 2. Rename the `redstarter-master` directory
 
-Make sure that the theme directory name is project appropriate!
-
-### 3. Install the dev dependencies
-
-Next you'll need to run `npm install` **inside your theme directory** next to install the node modules you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).

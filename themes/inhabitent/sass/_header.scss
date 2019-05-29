@@ -10,9 +10,15 @@
     }
 
 }
-.home nav a{
+.home, .page-about{
+    nav a{
     color: #fff;
-
+    }
+}
+.archive, .archive, .single-product, .blog, .single-post, .page-find-us   {
+    nav a{
+    color: #248A83;
+    }
 }
 
 

@@ -1,0 +1,17 @@
+.page-find-us, .blog, .single-post{
+    article{
+        border-right: 1px solid #e1e1e1;
+    padding-right: 1%;
+   
+    }
+
+}
+.page-find-us{
+    .entry-title{
+        text-transform: uppercase;
+    }
+    .contact-text, .email-text{
+        text-transform: uppercase;
+        font-size: 2.1rem;
+    }
+}
