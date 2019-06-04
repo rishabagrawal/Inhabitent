@@ -1,14 +1,18 @@
-(function($){
 
-    
-   $('.search-submit').on('click', function(event){
+(function($){
+    $(function(){
+
+    const searchIcon = $('.icon-search');
+    const searchField = $('.search-field');
+
+    searchIcon.on('click', function(event){
        event.preventDefault();
-       $('.search-field').toggle().focus();
+       searchField.toggle().focus();
    })
-   $('.search-field').on('blur', function(event){
-       event.preventDefault();
-       $('.search-field').hide();
+   searchField.on('blur', function(){
+         searchField.hide('slow');
    })
+}); //doc ready end 
 
 }) (jQuery); // end of js file
 

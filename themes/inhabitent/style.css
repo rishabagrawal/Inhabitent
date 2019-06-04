@@ -569,24 +569,26 @@ a {
   text-align: right;
   width: 50%; }
 
-.main-navigation .nav-menu {
-  width: 400px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.main-navigation .search-field {
-  display: none; }
-
-.main-navigation .search-submit {
-  background: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: none;
-  text-shadow: none; }
+  .main-navigation .nav-menu {
+    width: 400px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .main-navigation .search-field {
+    display: none; }
+  .main-navigation .search-submit {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    text-shadow: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
