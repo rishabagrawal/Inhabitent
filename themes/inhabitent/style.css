@@ -1081,18 +1081,18 @@ object {
   width: 80%;
   margin: 0 auto; }
 
-.blog .entry-header h2 {
+.blog .entry-header h2, .single-post .entry-header h2 {
   background: #248A83;
   padding: .75rem 1.5rem;
   font-family: "Novecento Sans Web",sans-serif; }
 
-.blog .entry-title {
+.blog .entry-title, .single-post .entry-title {
   position: absolute;
   top: 0; }
-  .blog .entry-title a {
+  .blog .entry-title a, .single-post .entry-title a {
     color: white; }
 
-.blog .entry-meta {
+.blog .entry-meta, .single-post .entry-meta {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1100,13 +1100,25 @@ object {
   padding: 0.00005rem 1.5rem;
   color: #fff; }
 
-.blog .type-post .entry-header {
+.blog .type-post .entry-header, .single-post .type-post .entry-header {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .blog .type-post .entry-header img {
+  .blog .type-post .entry-header img, .single-post .type-post .entry-header img {
     width: 100%; }
+
+.single-post .content-area {
+  margin: 3rem; }
+
+.single-post .entry-header h1 {
+  background: #248A83;
+  padding: .75rem 1.5rem;
+  font-family: "Novecento Sans Web",sans-serif;
+  color: #fff; }
+
+.single-post .entry-meta a {
+  color: #fff; }
 
 .site-footer {
   background-image: url("../../assets/images/dark-wood.png");
