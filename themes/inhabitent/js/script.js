@@ -10,7 +10,9 @@
        searchField.toggle().focus();
    })
    searchField.on('blur', function(){
+       if (searchField.val() === ''){
          searchField.hide('slow');
+       }
    })
 }); //doc ready end 
 
