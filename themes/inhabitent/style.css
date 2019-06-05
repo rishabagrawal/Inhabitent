@@ -504,6 +504,21 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
+/*404 page styling*/
+.page-content .search-field {
+  display: block; }
+
+.page-content .icon-search {
+  display: none; }
+
+.page-content .search-submit {
+  display: none; }
+
+.error404 .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding-right: 5%;
+  width: 73%; }
+
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/

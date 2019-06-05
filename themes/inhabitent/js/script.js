@@ -2,8 +2,8 @@
 (function($){
     $(function(){
 
-    const searchIcon = $('.icon-search');
-    const searchField = $('.search-field');
+    const searchIcon = $('.site-header .icon-search');
+    const searchField = $('.site-header .search-field');
 
     searchIcon.on('click', function(event){
        event.preventDefault();
