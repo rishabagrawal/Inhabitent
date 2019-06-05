@@ -25,7 +25,7 @@
     }
 }
 
-.blog, .single-post  {
+.archive, .blog, .single-post  {
     .entry-header h2{
         background: #248A83;
         padding: .75rem 1.5rem;
@@ -63,7 +63,7 @@
     
 }
 // single-page//
-.single-post{
+.archive,.single-post{
     .content-area{
         margin: 3rem;
     }
@@ -77,4 +77,10 @@
         color: #fff;
     }
     
+}
+.archive{
+    .content-area{
+        border-right: 1px solid #e1e1e1;
+        padding-right: 2%;
+    }
 }
