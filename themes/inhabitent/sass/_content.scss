@@ -10,6 +10,7 @@
 
 .hentry {
 	margin: 0 0 $base__space-unit;
+	
 }
 
 .updated:not(.published){
@@ -46,4 +47,11 @@
 }
 .bypostauthor {
 	display: block;
+}
+//layout//
+body:not(.home):not(.page-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content{
+	display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1120px;
 }

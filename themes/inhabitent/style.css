@@ -297,7 +297,13 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: Novecento Sans Web,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+h2 {
+  font-size: 2.1rem; }
 
 /* Copy */
 p {
@@ -378,7 +384,11 @@ ol {
   margin: 0 0 1.5rem 3rem; }
 
 ul {
-  list-style: disc; }
+  list-style: disc;
+  margin: 0;
+  padding: 0;
+  margin-left: 9px;
+  list-style-type: none; }
 
 ol {
   list-style: decimal; }
@@ -412,7 +422,10 @@ table {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1080px; }
 
 .site-branding img {
   height: 40px; }
@@ -496,7 +509,7 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: #404040;
+  color: #248a83;
   text-decoration: none; }
   a:focus {
     outline: thin dotted; }
@@ -683,6 +696,9 @@ body {
 
 .home .icon-search {
   color: #fff; }
+
+.home .site-header {
+  margin-left: 141px; }
 
 .home-hero {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../../assets/images/home-hero.jpg);
@@ -938,7 +954,8 @@ body {
     text-transform: uppercase; }
 
 .page-about .site-header {
-  position: absolute; }
+  position: absolute;
+  margin-left: 141px; }
 
 .about-heading {
   font-family: 'Novecento Sans Web',sans-serif;
@@ -982,6 +999,14 @@ body {
 
 .bypostauthor {
   display: block; }
+
+body:not(.home):not(.page-about):not(.post-type-archive):not(.tax-product-type):not(.single-product):not(.single-adventure) .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Media

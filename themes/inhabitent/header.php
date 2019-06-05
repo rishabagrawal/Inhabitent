@@ -21,6 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				
 				<!-- <a class="head-logo" href="<?php// bloginfo('url');?>"> -->
 				<div class="site-branding">
 				<a href=<?php echo get_home_url(); ?>><img src="<?php echo get_template_directory_uri()?>/assets/images/logos/inhabitent-logo-tent-white.svg" alt="inhabitent white logo"></a>
@@ -36,6 +37,7 @@
 						<?php get_search_form(); ?>
 					</div>
 				</nav><!-- #site-navigation -->
+				
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
