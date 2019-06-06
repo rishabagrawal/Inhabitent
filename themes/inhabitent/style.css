@@ -1023,6 +1023,14 @@ body:not(.home):not(.page-about):not(.post-type-archive):not(.tax-product-type):
   margin-right: auto;
   width: 1120px; }
 
+.search .page-header {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
+
+.search .content-area {
+  border-right: 1px solid #e1e1e1; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1162,7 +1170,7 @@ object {
 .archive .entry-meta a, .single-post .entry-meta a {
   color: #fff; }
 
-.archive .content-area {
+.date .content-area {
   border-right: 1px solid #e1e1e1;
   padding-right: 2%; }
 
