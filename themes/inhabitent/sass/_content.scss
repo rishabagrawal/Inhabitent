@@ -55,6 +55,10 @@ body:not(.home):not(.page-about):not(.post-type-archive):not(.tax-product-type):
     margin-right: auto;
     width: 1120px;
 }
+body:not(.home):not(.page-about) .content-area{
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
 
 // search page 
 .search .page-header{

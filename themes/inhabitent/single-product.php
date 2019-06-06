@@ -31,8 +31,9 @@ get_header(); ?>
 		<div class="single-product-container">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<?php
-				 echo CFS()->get( 'product_price' ); ?>
+		<p class="price"><?php
+				 echo CFS()->get( 'product_price' ); ?></p>
+				 	
 
 		
 	
