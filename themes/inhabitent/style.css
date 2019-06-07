@@ -533,6 +533,7 @@ a {
 
 /* Menus */
 .main-navigation {
+  font-family: 'Novecento Sans Web';
   clear: both;
   display: block;
   float: left; }
